@@ -54,7 +54,9 @@ jobs:
       with:
         name: node-app
         path: .
-
+    - name: Setup Node.js environment
+      uses: actions/setup-node@v3.4.1
+      
   deploy:
     permissions:
       contents: none
