@@ -5,7 +5,7 @@ A sample link of this themplate is: [Ho Yeung Lai's Profile](http://hoyeunglai.c
 
 ## Installation
 
-Clone or download personal_profile_angular4 to your local machine.
+Clone or download MyProfile to your local machine.
 
 personal_profile_angular4 requires [Node.js](https://nodejs.org/) v4+ to run.
 
