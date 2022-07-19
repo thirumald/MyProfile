@@ -1,0 +1,24 @@
+#sidebar {
+  border: 0;
+  background-color: rgb(83, 164, 245);
+  margin: 0;
+}
+.navbar-default .navbar-nav>li>a
+{
+  color: #fff !important;
+}
+/*
+.navbar .navbar-nav {
+  float: none;
+}
+
+.navbar-nav {
+  margin: 0px;
+}
+
+.navbar .nav > li {
+  display: block;
+  float: none;
+  height: 80px;
+}
+*/

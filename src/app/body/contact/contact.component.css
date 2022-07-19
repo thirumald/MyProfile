@@ -1,0 +1,16 @@
+#contact {
+  width: 100%;
+  min-height: 100vh;
+  background-color: rgb(66, 73, 73);
+  margin: 0;
+  padding: 0;
+}
+
+.title {
+  color: #FFFFFF;
+}
+
+.subtitle {
+  text-align: center;
+  color: #727878;
+}

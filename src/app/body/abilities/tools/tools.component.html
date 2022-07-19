@@ -1,0 +1,36 @@
+<h3>Tools</h3>
+<div class="row">
+
+  <div class="col-md-6">
+    <ul class="no-bullets">
+
+      <li *ngFor="let tool of toolsList1">
+        <span class="ability-title">{{ tool['toolName'] }} ({{ tool['year'] }} years)</span>
+        <span class="ability-score">
+					<span [ngClass]="tool['proficiency'] >= 1 ? 'glyphicon glyphicon-star filled': 'glyphicon glyphicon-star'"></span>
+					<span [ngClass]="tool['proficiency'] >= 2 ? 'glyphicon glyphicon-star filled': 'glyphicon glyphicon-star'"></span>
+					<span [ngClass]="tool['proficiency'] >= 3 ? 'glyphicon glyphicon-star filled': 'glyphicon glyphicon-star'"></span>
+					<span [ngClass]="tool['proficiency'] >= 4 ? 'glyphicon glyphicon-star filled': 'glyphicon glyphicon-star'"></span>
+					<span [ngClass]="tool['proficiency'] >= 5 ? 'glyphicon glyphicon-star filled': 'glyphicon glyphicon-star'"></span>
+				</span>
+      </li>
+
+    </ul>
+  </div>
+  <div class="col-md-6">
+    <ul class="no-bullets">
+
+      <li *ngFor="let tool of toolsList2">
+        <span class="ability-title">{{ tool['toolName'] }} ({{ tool['year'] }} years)</span>
+        <span class="ability-score">
+					<span [ngClass]="tool['proficiency'] >= 1 ? 'glyphicon glyphicon-star filled': 'glyphicon glyphicon-star'"></span>
+					<span [ngClass]="tool['proficiency'] >= 2 ? 'glyphicon glyphicon-star filled': 'glyphicon glyphicon-star'"></span>
+					<span [ngClass]="tool['proficiency'] >= 3 ? 'glyphicon glyphicon-star filled': 'glyphicon glyphicon-star'"></span>
+					<span [ngClass]="tool['proficiency'] >= 4 ? 'glyphicon glyphicon-star filled': 'glyphicon glyphicon-star'"></span>
+					<span [ngClass]="tool['proficiency'] >= 5 ? 'glyphicon glyphicon-star filled': 'glyphicon glyphicon-star'"></span>
+				</span>
+      </li>
+
+    </ul>
+  </div>
+</div>

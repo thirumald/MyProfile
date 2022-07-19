@@ -1,0 +1,26 @@
+<h3>Education</h3>
+<div class="experiences">
+
+  <div class="experience row" *ngFor="let education of userEducationsInfo">
+    <div class="col-md-4">
+      <h4>{{ education['schoolName'] }}</h4>
+      <p class="experience-period">
+        {{ education['startDate'] }}				-
+        {{ education['endDate'] }}			</p>
+    </div>
+    <div class="col-md-8">
+      <p>
+        <strong>{{ education['degreeTitle'] }}</strong>
+        <span class="hidden-phone">
+					{{ education['certificationDescription'] }}</span>
+        <br>
+        <span class="experience-details">
+					<span class="location">
+						<span class="glyphicon glyphicon-map-marker"></span>
+						{{ education['location'] }}</span>
+				</span>
+      </p>
+    </div>
+  </div>
+
+</div>

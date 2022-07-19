@@ -1,0 +1,39 @@
+<h3>Skills</h3>
+<div class="row">
+
+
+  <div class="col-md-6">
+    <ul class="no-bullets">
+      <li *ngFor="let skill of skillsList1">
+        <span class="ability-title">{{ skill['skillName'] }}</span>
+        <span class="ability-score">
+					<span [ngClass]="skill['proficiency'] >= 1 ? 'glyphicon glyphicon-star filled': 'glyphicon glyphicon-star'"></span>
+					<span [ngClass]="skill['proficiency'] >= 2 ? 'glyphicon glyphicon-star filled': 'glyphicon glyphicon-star'"></span>
+					<span [ngClass]="skill['proficiency'] >= 3 ? 'glyphicon glyphicon-star filled': 'glyphicon glyphicon-star'"></span>
+					<span [ngClass]="skill['proficiency'] >= 4 ? 'glyphicon glyphicon-star filled': 'glyphicon glyphicon-star'"></span>
+					<span [ngClass]="skill['proficiency'] >= 5 ? 'glyphicon glyphicon-star filled': 'glyphicon glyphicon-star'"></span>
+				</span>
+      </li>
+    </ul>
+  </div>
+  <div class="col-md-6">
+    <ul class="no-bullets">
+      <li *ngFor="let skill of skillsList2">
+        <span class="ability-title">{{ skill['skillName'] }}</span>
+        <span class="ability-score">
+					<span [ngClass]="skill['proficiency'] >= 1 ? 'glyphicon glyphicon-star filled': 'glyphicon glyphicon-star'"></span>
+					<span [ngClass]="skill['proficiency'] >= 2 ? 'glyphicon glyphicon-star filled': 'glyphicon glyphicon-star'"></span>
+					<span [ngClass]="skill['proficiency'] >= 3 ? 'glyphicon glyphicon-star filled': 'glyphicon glyphicon-star'"></span>
+					<span [ngClass]="skill['proficiency'] >= 4 ? 'glyphicon glyphicon-star filled': 'glyphicon glyphicon-star'"></span>
+					<span [ngClass]="skill['proficiency'] >= 5 ? 'glyphicon glyphicon-star filled': 'glyphicon glyphicon-star'"></span>
+				</span>
+      </li>
+    </ul>
+  </div>
+
+</div>
+
+<div class="text-center project-referal">
+  <p>See my other coding project on GitHub.</p>
+  <a [href]="userInfo['githubAccount']" class="btn btn-primary" target="_blank">See project on Github</a>
+</div>
